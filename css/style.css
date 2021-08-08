@@ -1,0 +1,100 @@
+/* Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*-------------------- */
+body{
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: bold;
+}
+.wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0px auto;
+  box-shadow: 0 0 10px 0px rgb(121, 121, 121);
+}
+.main {
+}
+.image__bg {
+  height: 300px;
+  background: url(../img/background.jpg)center / cover no-repeat;
+  display: flex;
+  justify-content:center;align-items: center;
+}
+.image {
+  width: 115px;
+  border-radius: 50%;
+  border: #fff solid 5px;
+  overflow: hidden;
+}
+.image img{
+  width: 100%;
+}
+.content {
+  padding: 40px 30px 30px;
+}
+.title {
+  color: #333;
+  font-size: 30px;
+  margin: 0px 0px 40px 0px;
+}
+.todo {
+  margin: 0px 0px 40px 0px;
+  user-select: none;
+}
+.todo li{
+  margin: 0px 0px 20px 0px;
+}
+.todo li label{
+  color: #FB726B;
+  font-size: 17px;
+  margin: 0px 0px 20px 5px;
+}
+.todo li label.done{
+  color: #037C1F;
+  text-decoration: line-through;
+}
+.form__input {
+  max-width: 420px;
+  height: 55px;
+  margin: 0px 0px 15px 0px;
+}
+.input {
+  padding: 0px 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: inset 0 0 7px 0 rgb(173, 173, 173);
+}
+.form__btn {
+  max-width: 420px;
+  height: 65px;
+}
+.btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #037C1F;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0px 0px 0px;
+}
