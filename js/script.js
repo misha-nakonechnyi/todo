@@ -10,14 +10,16 @@ if(localStorage.getItem('todo')){
 }
 
 addButton.addEventListener('click', function (){
-  let newTodo = {
-    todo: addMessage.value,
-    checked: false,
-    done: false
+  if(addMessage.value !== ''){
+    let newTodo = {
+      todo: addMessage.value,
+      checked: false,
+      done: false
+    };
+    todoList.push(newTodo);
+    displayMessages();
+    localStorage.setItem('todo', JSON.stringify(todoList));
   };
-  todoList.push(newTodo);
-  displayMessages();
-  localStorage.setItem('todo', JSON.stringify(todoList));
 });
 
 function displayMessages(){
